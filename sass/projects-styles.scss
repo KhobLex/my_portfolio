@@ -1,0 +1,74 @@
+@import '_asset.scss';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+
+
+#logo{
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    #brand-name{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.55rem;
+        color: $primary-color;
+        display: inline-block;
+        
+        text-decoration: none;
+            i{
+                color: $primary-color;
+            }
+        
+        &::after{
+            content: '';
+            width: 0;
+            height: 2px;
+            display: block;
+            background-color: #591E13;
+            transition: width ease-in-out 600ms;
+        }
+        &:hover,&:focus{
+            &::after{
+                width: 50%;
+            }
+        }
+    }
+
+    #project-nav{
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+nav{
+    .container-fluid{
+        #invisible-brand-name{
+            visibility: hidden;
+        }
+        // #nav-btn{
+
+        // }
+        #nav-btn{
+            color: transparent;
+            border: none;
+        }
+        #navbarNav{
+            width: 100%;
+            
+        }
+    }
+}

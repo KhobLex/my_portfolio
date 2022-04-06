@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, html {
+  scroll-behavior: smooth;
+  font-family: 'Times New Roman', Times, serif !important;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+#logo {
+  width: 100%;
+  background-color: #ececec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10%;
+}
+
+#logo #brand-name {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.55rem;
+  color: #591E13;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#logo #brand-name i {
+  color: #591E13;
+}
+
+#logo #brand-name::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  display: block;
+  background-color: #591E13;
+  -webkit-transition: width ease-in-out 600ms;
+  transition: width ease-in-out 600ms;
+}
+
+#logo #brand-name:hover::after, #logo #brand-name:focus::after {
+  width: 50%;
+}
+
+#logo #project-nav {
+  text-decoration: none;
+  color: #000;
+}
+
+nav .container-fluid #invisible-brand-name {
+  visibility: hidden;
+}
+
+nav .container-fluid #nav-btn {
+  color: transparent;
+  border: none;
+}
+
+nav .container-fluid #navbarNav {
+  width: 100%;
+}
+/*# sourceMappingURL=projects-styles.min.css.map */
